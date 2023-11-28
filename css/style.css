@@ -82,8 +82,7 @@ main .wrapper {
 
 .card {
     width: calc(1080px / 3 - var(--card-margin)*2);
-    margin: var(--card-margin);
-    padding-bottom: 20px;
+    margin: 20px var(--card-margin);
 
     position: relative;
 
