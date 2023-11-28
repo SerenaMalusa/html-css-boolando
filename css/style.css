@@ -16,7 +16,7 @@ body {
 /* UTILS */
 .container {
     margin: 0 auto;
-    width: 70%;
+    max-width: 1080px;
 }
 
 .wrapper {
@@ -28,11 +28,20 @@ body {
     color: white;
 }
 
+:root {
+    --card-margin: 7px;
+}
+
 /* HEADER */
 header {
- background-color: #ff6900;
- font-size: 0.7rem;
- font-weight: bold;
+    background-color: #ff6900;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    position: sticky;
+    top: 0;
 }
 
 header .wrapper {
@@ -54,4 +63,24 @@ header .logo__img {
 header .nav__element {
     display: inline-block;
     margin: 0 3px;
+}
+
+/* MAIN */
+main .wrapper {
+    padding: 40px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    /* debug */
+    height: 900px;
+    background-color: aqua;
+}
+
+.card {
+    width: calc(1080px / 3 - var(--card-margin)*2);
+    margin: var(--card-margin);
+
+    /* debug */
+    background-color: #ff6900;
+    border: 1px dotted black;    
 }
