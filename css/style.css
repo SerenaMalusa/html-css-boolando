@@ -73,7 +73,7 @@ main .wrapper {
     flex-wrap: wrap;
 
     /* debug */
-    height: 900px;
+    /* height: 900px; */
     /* background-color: aqua; */
 }
 
@@ -105,14 +105,13 @@ main .wrapper {
     display: block;
 }
 
+.card > * {
+    font-size: 0.8rem;
+}
+
 .card .product_name {
     text-transform: uppercase;
     font-size: 0.9rem;
-}
-
-.card .product_brand,
-.card .product_price {
-    font-size: 0.8rem;
 }
 
 .product_price.discounted {
@@ -123,6 +122,8 @@ main .wrapper {
 .product_price.full {
     text-decoration: line-through;
 }
+
+/* cuoricino preferiti */
 
 .card .card__heart {
     background-color: white;
@@ -143,3 +144,26 @@ main .wrapper {
     color: red;
     cursor: pointer;
 }
+
+/* etichette */
+.card .card__tag {
+    display: inline-block;
+    padding: 4px 8px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.card .card__tags {
+    position: absolute;
+    bottom: 100px;
+}
+
+.card__tag.discount {
+    background-color: red;
+}
+
+.card__tag.category {
+    background-color: green;
+}
+
