@@ -39,7 +39,7 @@ body {
 /* HEADER */
 header {
     background-color: #ff6900;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.412);
 
     font-size: 0.7rem;
     font-weight: bold;
