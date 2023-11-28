@@ -72,7 +72,7 @@ header .nav__element {
 /* MAIN */
 main .wrapper {
     padding: 40px 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     /* debug */
