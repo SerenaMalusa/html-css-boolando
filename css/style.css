@@ -42,6 +42,7 @@ header {
 
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header .wrapper {
@@ -73,14 +74,72 @@ main .wrapper {
 
     /* debug */
     height: 900px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .card {
     width: calc(1080px / 3 - var(--card-margin)*2);
     margin: var(--card-margin);
 
+    position: relative;
+
     /* debug */
-    background-color: #ff6900;
+    /* background-color: #ff6900; */
     border: 1px dotted black;    
+}
+
+/* card content */
+.card__img {
+    display: block;
+}
+
+.card:hover .img-fixed {
+    display: none;
+}
+
+.img-hover {
+    display: none;
+}
+
+.card:hover .img-hover {
+    display: block;
+}
+
+.card .product_name {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.card .product_brand,
+.card .product_price {
+    font-size: 0.8rem;
+}
+
+.product_price.discounted {
+    font-weight: bold;
+    color: red;
+}
+
+.product_price.full {
+    text-decoration: line-through;
+}
+
+.card .card__heart {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2rem;
+
+    position: absolute;
+    right: 0;
+    top: 8px;
+
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+.card__heart:hover {
+    color: red;
+    cursor: pointer;
 }
