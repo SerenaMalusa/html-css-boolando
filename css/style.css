@@ -146,6 +146,10 @@ main .wrapper {
 }
 
 /* etichette */
+.card .card__tag.hidden {
+    display: none;
+}
+
 .card .card__tag {
     display: inline-block;
     padding: 4px 8px;
@@ -166,4 +170,13 @@ main .wrapper {
 .card__tag.category {
     background-color: green;
 }
+
+.card__tag.d-50::after {
+    content: "-50%";
+}
+
+.card__tag.d-30::after {
+    content: "-30%";
+}
+
 
